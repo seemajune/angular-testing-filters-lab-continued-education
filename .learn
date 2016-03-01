@@ -1,0 +1,14 @@
+tags: 
+  - angular
+  - testing
+  - filters
+  - dataset
+  - ngRepeat
+languages:
+  - javascript
+frameworks:
+  - angular
+  - jasmine
+  - karma
+resources: 
+  - 0
