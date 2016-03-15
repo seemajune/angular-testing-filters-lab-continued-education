@@ -3138,6 +3138,10 @@ function ContactController($filter) {
     this.getFemaleContacts = function () {
         this.filteredList = $filter('filter')(this.list,  { gender: "female" });
     };
+
+    this.getPplFromBelfast = function () {
+        this.filteredList = $filter('filter')(this.list, { location: { city: "belfast" }}); 
+    }
 }
 
 angular

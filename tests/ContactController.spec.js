@@ -16,4 +16,13 @@ describe('ContactController', function () {
         expect($scope.vm.filteredList.length).toBe(71);
     });
 
+    it('should filter all ppl from Belfast', function () {
+        var $scope = {};
+        $controller('ContactController as vm', {$scope: $scope});
+
+         $scope.vm.getPplFromBelfast();
+ 
+        expect($scope.vm.filteredList.length).toBe(5);
+    });
+
 });
