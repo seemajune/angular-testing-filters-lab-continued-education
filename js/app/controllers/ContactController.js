@@ -3134,6 +3134,10 @@ function ContactController($filter) {
     this.changeFilter = function () {
         this.filteredList = $filter('filter')(this.list, this.search);
     };
+
+    this.getFemaleContacts = function () {
+        this.filteredList = $filter('filter')(this.list,  { gender: "female" });
+    };
 }
 
 angular
